@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for n in profile_list %}
+        <div class="card" style="width:400px">
+  <img class="card-img-top" src="/media/{{ n.ProfilePic }}" >
+  <div class="card-body">
+    <h4 class="card-title">{{ n.name }}</h4>
+    <p class="card-text">{{ n.status }}</p>
+    <a href="/social/profile/{{ n.id }}" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+    {% endfor %}
+{% endblock %}

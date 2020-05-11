@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 id="heading" class="font-italic display-4" style="position: absolute;top: 285px;left: 50px">SAMAJIK</h1>
+    <div class="row">
+
+    <div class="col-md-6">
+       <div class=" bg-info m-2 p-2 jumbotron"> <div><p>Social media are interactive computer-mediated technologies that facilitate the creation or sharing of information, ideas, career interests and other forms of expression via virtual communities and networks.[1][2] The variety of stand-alone and built-in social media services currently available introduces challenges of definition; however, there are some common features:[2]
+
+Social media are interactive Web 2.0 Internet-based applications.[2][3]
+User-generated content such as text posts or comments, digital photos or videos, and data generated through all online interactions, is the lifeblood of social media.[2][3]
+Users create service-specific profiles and identities for the website or app that are designed and maintained by the social media organization.[2][4]
+Social media facilitate the development of online social networks by connecting a user's profile with those of other individuals or groups.[2][4]
+</p></div>
+    </div></div>
+    <div class="col-md-6" style="height: 200px">
+      <div id="demo" class="carousel slide" data-ride="carousel" >
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        {% load static %}
+      <img src="{% static '/static\images\pic2.png' %}" class="h-100 w-100">
+    </div>
+    <div class="carousel-item">
+      {% load static %}
+      <img src="{% static '/static\images\pic3.png' %}" class="h-100 w-100">
+    </div>
+    <div class="carousel-item">
+      {% load static %}
+      <img src="{% static '/static\images\pic4.png' %}" class="h-100 w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+    </div>
+    </div>
+{% endblock %}
